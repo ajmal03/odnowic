@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+		<title>Divided Full Page Scroll &#8211; Wavo</title>
+<meta name='robots' content='noindex, nofollow' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+
+<link rel="alternate" type="application/rss+xml" title="Wavo &raquo; Feed" href="https://wavo1.ninetheme.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Wavo &raquo; Comments Feed" href="https://wavo1.ninetheme.com/comments/feed/" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='safe-svg-svg-icon-style-inline-css' type='text/css'>
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{fill:currentColor;height:100%;max-height:100%;max-width:100%;width:100%}
+
+/*# sourceURL=https://wavo1.ninetheme.com/wp-content/plugins/safe-svg/dist/safe-svg-block-frontend.css */
+</style>
+<link rel='stylesheet' id='woocommerce-layout-css' href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css@ver=10.6.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css@ver=10.6.1.css' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='../../wp-content/plugins/woocommerce/assets/css/woocommerce.css@ver=10.6.1.css' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+/*# sourceURL=woocommerce-inline-inline-css */
+</style>
+<link rel='stylesheet' id='wavo-custom-css' href='../../wp-content/plugins/wavo-elementor-addons/assets/front/css/custom.css@ver=6.9.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wavo-woocommerce-custom-css' href='../../wp-content/themes/wavo/woocommerce/woocommerce-custom.css@ver=1.0.css' type='text/css' media='all' />
+<style id='wavo-woo-style-inline-css' type='text/css'>
+.woocommerce .page-header.hero-overlay:before{
+            content: "";
+            position: absolute;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+        }
+        .page-header {
+            position: relative;
+        }
+/*# sourceURL=wavo-woo-style-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-frontend-css' href='../../wp-content/plugins/elementor/assets/css/frontend.min.css@ver=3.35.9.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-8-css' href='../../wp-content/uploads/elementor/css/post-8.css@ver=1774744677.css' type='text/css' media='all' />
+<link rel='stylesheet' id='swiper-css' href='../../wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css@ver=8.4.5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-post-2903-css' href='../../wp-content/uploads/elementor/css/post-2903.css@ver=1774769061.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='../../wp-content/themes/wavo/js/plugins/bootstrap/bootstrap.min.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css' href='../../wp-content/themes/wavo/css/plugins/animate.min.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicons-css' href='../../wp-content/themes/wavo/css/plugins/ionicons.min.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-all-css' href='../../wp-content/themes/wavo/css/plugins/fontawesome-all.min.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='helper-css' href='../../wp-content/themes/wavo/css/plugins/helper.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hamburgers-css' href='../../wp-content/themes/wavo/css/plugins/hamburgers.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='all-cursors-css' href='../../wp-content/themes/wavo/js/plugins/cursor/all-cursors.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wavo-style-css' href='../../wp-content/themes/wavo/css/style.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wavo-framework-style-css' href='../../wp-content/themes/wavo/css/framework-style.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wavo-update-css' href='../../wp-content/themes/wavo/css/update.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wavo-fonts-css' href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C600%2C700%7CUbuntu%3A400%2C500%2C700%7CPoppins%3A200%2C300%2C400%2C500%2C600%2C700%2C800%7CRoboto%2BMono%3A400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<style id='wavo-custom-style-inline-css' type='text/css'>
+body .pace, body.dark .pace, body.light .pace { background-color: ;}body #preloader:after, body #preloader:before{ background-color:#ffffff;}body .pace .pace-progress { background-color:#0d73fc;}div#nt-preloader {background-color: #ffffff;overflow: hidden;background-repeat: no-repeat;background-position: center center;height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 10000;}.lazyloading {
+      background-image: url(../../wp-content/themes/wavo/images/loader.gif);
+    }.nt-404 .call-action:before {
+          background-image: url(../../wp-content/themes/wavo/images/pattern-bg.gif);
+          background-repeat: repeat;
+          opacity: .04;
+        }.nt-404 .call-action:before {
+          opacity: 0.04;
+        }.topnav .menu-icon .text:after {
+            content: "Close";width: max-content;min-width: 70px;
+        }.progress-wrap {
+            -webkit-box-shadow: inset 0 0 0 2px rgba(130,130,130,0.2);
+            box-shadow: inset 0 0 0 2px rgba(130,130,130,0.2);
+        }.progress-wrap svg.progress-circle path {
+            stroke: #045fa0;
+        }.progress-wrap::after {
+            color: #6c6d6d;
+        }.hamenu {
+			-webkit-transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
+			transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
+		}.hamenu .menu-links .main-menu > li {
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+		}.hamenu .menu-links .main-menu .sub-menu {
+			-webkit-transition-delay: 0.2s;
+			transition-delay: 0.2s;
+		}.cursor1,.cursor1::after,.cursor2::after {
+			border-radius: 0!important;;
+		}.cursor1::after,.cursor2::after {
+			background-image: url();
+            background-color:transparent;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:contain;
+		}
+/*# sourceURL=wavo-custom-style-inline-css */
+</style>
+<link rel='stylesheet' id='vegas-css' href='../../wp-content/themes/wavo/js/plugins/vegas/vegas.css@ver=6.9.css' type='text/css' media='all' />
+<link rel='stylesheet' id='animated-headline-css' href='../../wp-content/plugins/wavo-elementor-addons/assets/front/js/animated-headline/style.css@ver=6.9.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-roboto-css' href='../../wp-content/uploads/elementor/google-fonts/css/roboto.css@ver=1754838492.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='../../wp-content/uploads/elementor/google-fonts/css/robotoslab.css@ver=1754838499.css' type='text/css' media='all' />
+<script type="text/javascript" src="../../wp-includes/js/jquery/jquery.min.js@ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/jquery/jquery-migrate.min.js@ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js@ver=2.7.0-wc.10.6.1" id="wc-jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https://wavo1.ninetheme.com/shop-2/cart/","is_cart":"","cart_redirect_after_add":"no"};
+//# sourceURL=wc-add-to-cart-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js@ver=10.6.1" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js@ver=2.1.4-wc.10.6.1" id="wc-js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_password_show":"Show password","i18n_password_hide":"Hide password"};
+//# sourceURL=woocommerce-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js@ver=10.6.1" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/plugins/wow/wow.min.js@ver=1.0" id="wow-js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://wavo1.ninetheme.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9" />
+<meta name="generator" content="WooCommerce 10.6.1" />
+<link rel="canonical" href="../../index.html@p=2903.html" />
+<link rel='shortlink' href='../../index.html@p=2903.html' />
+<meta name="generator" content="Redux 4.5.11" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.35.9; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="../../wp-content/uploads/2025/08/favicon-100x100.png" sizes="32x32" />
+<link rel="icon" href="../../wp-content/uploads/2025/08/favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="../../wp-content/uploads/2025/08/favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://wavo1.ninetheme.com/wp-content/uploads/2025/08/favicon-300x300.png" />
+<style id="wavo-dynamic-css" title="dynamic-css" class="redux-options-output">.nt-breadcrumbs .nt-breadcrumbs-list li.active{color:#ffffff;}.nt-breadcrumbs .nt-breadcrumbs-list i{color:#ffffff;}.loading-text{color:#000;}.cursor1{width:15px;}.progress-wrap{right:30px;bottom:30px;}#nt-index .page-header .text-bg{top:60px;}</style>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="wp-singular page-template page-template-elementor_canvas page page-id-2903 page-child parent-pageid-22 wp-theme-wavo theme-wavo woocommerce-no-js nt-page-default Wavo nt-version-2.3.6 preloader-on preloader-default  light split-animation-enabled nt-desktop elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-2903">
+	                <div class="pace">
+                    <div class="pace-progress">
+                        <div class="pace-progress-inner"></div>
+                    </div>
+                    <div class="pace-activity"></div>
+                </div>
+                <div id="preloader">
+                    <div class="loading-text">Loading</div>
+                                    </div>
+
+            		<div data-elementor-type="wp-page" data-elementor-id="2903" class="elementor elementor-2903">
+						<section class="wavo-column-gap-no elementor-section elementor-top-section elementor-element elementor-element-30a536c elementor-section-stretched elementor-section-full_width elementor-section-height-full elementor-section-items-stretch elementor-section-content-top elementor-section-height-default" data-id="30a536c" data-element_type="section" data-e-type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-40ac322" data-id="40ac322" data-element_type="column" data-e-type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8ccac7f elementor-widget elementor-widget-wavo-onepage" data-id="8ccac7f" data-element_type="widget" data-e-type="widget" data-widget_type="wavo-onepage.default">
+				<div class="elementor-widget-container">
+					<div class="slider home-onepage  has-pagination pagination-fraction has-thumb" data-slider-settings='{"loop":false,"autoplay":false,"destroy":"true","direction":"vertical","force":"horizontal","thumbs":false,"parallax":false,"mobparallax":false,"mousewheel":true,"navigation":false,"scrollbar":false,"speed":800,"pagination":"custom"}'><div class="swiper-container parallax-slider-two"><style>.elementor-2894 .elementor-element.elementor-element-3ec008c > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:flex-start;align-items:flex-start;}.elementor-2894 .elementor-element.elementor-element-3ec008c{overflow:hidden;}.elementor-2894 .elementor-element.elementor-element-3ec008c .elementor-background-overlay{width:100%;height:100%;}.elementor-2894 .elementor-element.elementor-element-718a97d:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-2894 .elementor-element.elementor-element-718a97d > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("../../wp-content/uploads/2020/04/home-bg4.jpg");background-position:center center;background-repeat:no-repeat;background-size:cover;}.elementor-2894 .elementor-element.elementor-element-718a97d > .elementor-element-populated >  .elementor-background-overlay{background-color:#000000;opacity:0.28;}.elementor-2894 .elementor-element.elementor-element-718a97d > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:26% 5% 0% 9%;}.elementor-2894 .elementor-element.elementor-element-718a97d > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-2894 .elementor-element.elementor-element-a0b7b2f{z-index:2;}.elementor-2894 .elementor-element.elementor-element-a0b7b2f .elementor-heading-title{font-weight:400;text-transform:uppercase;letter-spacing:3.8px;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-2c7c27d{margin:30px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;z-index:2;}.elementor-2894 .elementor-element.elementor-element-2c7c27d.wavo-stroke.stroke-type-full .elementor-heading-title{-webkit-text-stroke-width:1px;color:transparent;-webkit-text-stroke-color:#FFFFFF;-webkit-text-fill-color:transparent;}.elementor-2894 .elementor-element.elementor-element-2c7c27d.wavo-stroke.stroke-type-part .elementor-heading-title b{-webkit-text-stroke-width:1px;color:transparent;-webkit-text-stroke-color:#FFFFFF;-webkit-text-fill-color:transparent;}.elementor-2894 .elementor-element.elementor-element-2c7c27d .elementor-heading-title{font-family:"Nunito", Sans-serif;font-size:94px;font-weight:700;text-transform:capitalize;line-height:1.1em;letter-spacing:1.7px;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-f09a9e5 > .elementor-widget-container{margin:5px 0px 0px 0px;}.elementor-2894 .elementor-element.elementor-element-f09a9e5{z-index:2;}.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper b, .elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper .typed-cursor,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper .typed_before,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper .typed_after{color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper b,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper .typed-cursor,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper .typed_before,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper .typed_after{font-family:"Nunito", Sans-serif;font-size:94px;font-weight:800;font-style:normal;line-height:1em;}.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper b{font-weight:700;font-style:normal;}.elementor-2894 .elementor-element.elementor-element-61a451f:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-2894 .elementor-element.elementor-element-61a451f > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#000000;}.elementor-2894 .elementor-element.elementor-element-61a451f > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:24% 10% 88% 10%;}.elementor-2894 .elementor-element.elementor-element-61a451f > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-2894 .elementor-element.elementor-element-cc08815{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 50px) 0px;--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-50px/2);}.elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-50px/2);}.elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-item > a{font-weight:600;}.elementor-2894 .elementor-element.elementor-element-cc08815 .elementor-icon-list-text{color:#FFFFFF;transition:color 0.3s;}.elementor-2894 .elementor-element.elementor-element-64e00f1{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 60px) 0px;}.elementor-2894 .elementor-element.elementor-element-64e00f1 .elementor-heading-title.animated .char{-webkit-animation:fadeInRight2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeInRight2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(50ms * var(--char-index));animation-delay:calc(50ms * var(--char-index));}.elementor-2894 .elementor-element.elementor-element-64e00f1 .elementor-heading-title.animated .word{-webkit-animation:fadeInRight2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeInRight2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(50ms * var(--word-index));animation-delay:calc(50ms * var(--word-index));}.elementor-2894 .elementor-element.elementor-element-64e00f1 .elementor-heading-title.splitting .whitespace{width:10px;}.elementor-2894 .elementor-element.elementor-element-64e00f1 .elementor-heading-title{color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-24f0a36{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 80px) 0px;font-size:15px;line-height:2em;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-ecc3e44 .wavo-btn:hover{background-color:#000000;}.elementor-2894 .elementor-element.elementor-element-ecc3e44 .wavo-button:not(.btn-justify){text-align:left;}.elementor-2894 .elementor-element.elementor-element-ecc3e44 .wavo-btn span{color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-ecc3e44 .wavo-button .wavo-btn span{font-weight:600;text-transform:none;}.elementor-2894 .elementor-element.elementor-element-ecc3e44 .wavo-btn{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;border-style:solid;border-width:0px 0px 0px 0px;}.elementor-2894 .elementor-element.elementor-element-ecc3e44 .wavo-btn:hover span{color:#24D5B4;}.elementor-2894 .elementor-element.elementor-element-ef69aab > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:flex-start;align-items:flex-start;}.elementor-2894 .elementor-element.elementor-element-ef69aab{overflow:hidden;}.elementor-2894 .elementor-element.elementor-element-ef69aab .elementor-background-overlay{width:100%;height:100%;}.elementor-2894 .elementor-element.elementor-element-7232f13:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-2894 .elementor-element.elementor-element-7232f13 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#EFE9DD;}.elementor-2894 .elementor-element.elementor-element-7232f13 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:24% 10% 88% 10%;}.elementor-2894 .elementor-element.elementor-element-7232f13 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-2894 .elementor-element.elementor-element-2940a87{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 50px) 0px;--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-50px/2);}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-50px/2);}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-item > a{font-weight:600;}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-text{color:#000000;transition:color 0.3s;}.elementor-2894 .elementor-element.elementor-element-fb55cf4{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 60px) 0px;}.elementor-2894 .elementor-element.elementor-element-fb55cf4 .elementor-heading-title.animated .char{-webkit-animation:fadeInUp2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeInUp2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(40ms * var(--char-index));animation-delay:calc(40ms * var(--char-index));}.elementor-2894 .elementor-element.elementor-element-fb55cf4 .elementor-heading-title.animated .word{-webkit-animation:fadeInUp2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeInUp2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(40ms * var(--word-index));animation-delay:calc(40ms * var(--word-index));}.elementor-2894 .elementor-element.elementor-element-fb55cf4 .elementor-heading-title.splitting .whitespace{width:10px;}.elementor-2894 .elementor-element.elementor-element-fb55cf4 .elementor-heading-title{color:#000000;}.elementor-2894 .elementor-element.elementor-element-dd1e9e1{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 80px) 0px;font-size:15px;line-height:2em;color:#000000;}.elementor-2894 .elementor-element.elementor-element-a69a290 .wavo-button:not(.btn-justify){text-align:left;}.elementor-2894 .elementor-element.elementor-element-a69a290 .wavo-btn span{color:#000000;}.elementor-2894 .elementor-element.elementor-element-a69a290 .wavo-button .wavo-btn span{font-weight:600;text-transform:none;}.elementor-2894 .elementor-element.elementor-element-a69a290 .wavo-btn{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;border-style:solid;border-width:0px 0px 0px 0px;}.elementor-2894 .elementor-element.elementor-element-a69a290 .wavo-btn:hover span{color:#24D5B4;}.elementor-2894 .elementor-element.elementor-element-b7435a6:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-2894 .elementor-element.elementor-element-b7435a6 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("../../wp-content/uploads/2020/04/work-x5.jpg");background-position:top right;background-repeat:no-repeat;background-size:cover;}.elementor-2894 .elementor-element.elementor-element-b7435a6 > .elementor-element-populated >  .elementor-background-overlay{background-color:#000000;opacity:0.28;}.elementor-2894 .elementor-element.elementor-element-b7435a6 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:26% 5% 0% 9%;}.elementor-2894 .elementor-element.elementor-element-b7435a6 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-2894 .elementor-element.elementor-element-896e47a{z-index:2;}.elementor-2894 .elementor-element.elementor-element-896e47a .elementor-heading-title{font-weight:400;text-transform:uppercase;letter-spacing:3.8px;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-677ec2b{width:var( --container-widget-width, 480px );max-width:480px;margin:30px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;--container-widget-width:480px;--container-widget-flex-grow:0;z-index:2;}.elementor-2894 .elementor-element.elementor-element-677ec2b .elementor-heading-title.animated .char{-webkit-animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(40ms * var(--char-index));animation-delay:calc(40ms * var(--char-index));}.elementor-2894 .elementor-element.elementor-element-677ec2b .elementor-heading-title.animated .word{-webkit-animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(40ms * var(--word-index));animation-delay:calc(40ms * var(--word-index));}.elementor-2894 .elementor-element.elementor-element-677ec2b .elementor-heading-title.splitting .whitespace{width:15px;}.elementor-2894 .elementor-element.elementor-element-677ec2b .elementor-heading-title{font-family:"Nunito", Sans-serif;font-size:94px;font-weight:700;text-transform:capitalize;line-height:1.1em;letter-spacing:1.7px;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-4393050 > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:flex-start;align-items:flex-start;}.elementor-2894 .elementor-element.elementor-element-4393050{overflow:hidden;}.elementor-2894 .elementor-element.elementor-element-4393050 .elementor-background-overlay{width:100%;height:100%;}.elementor-2894 .elementor-element.elementor-element-3019bf2:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-2894 .elementor-element.elementor-element-3019bf2 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("../../wp-content/uploads/2020/04/home-bg1.jpg");background-position:center center;background-repeat:no-repeat;background-size:cover;}.elementor-2894 .elementor-element.elementor-element-3019bf2 > .elementor-element-populated >  .elementor-background-overlay{background-color:#000000;opacity:0.28;}.elementor-2894 .elementor-element.elementor-element-3019bf2 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:26% 5% 0% 9%;}.elementor-2894 .elementor-element.elementor-element-3019bf2 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-2894 .elementor-element.elementor-element-905f3ad{z-index:2;}.elementor-2894 .elementor-element.elementor-element-905f3ad .elementor-heading-title{font-weight:400;text-transform:uppercase;letter-spacing:3.8px;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-9142286{width:var( --container-widget-width, 480px );max-width:480px;margin:30px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;--container-widget-width:480px;--container-widget-flex-grow:0;z-index:2;}.elementor-2894 .elementor-element.elementor-element-9142286 .elementor-heading-title.animated .char{-webkit-animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(40ms * var(--char-index));animation-delay:calc(40ms * var(--char-index));}.elementor-2894 .elementor-element.elementor-element-9142286 .elementor-heading-title.animated .word{-webkit-animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(40ms * var(--word-index));animation-delay:calc(40ms * var(--word-index));}.elementor-2894 .elementor-element.elementor-element-9142286 .elementor-heading-title.splitting .whitespace{width:15px;}.elementor-2894 .elementor-element.elementor-element-9142286 .elementor-heading-title{font-family:"Nunito", Sans-serif;font-size:94px;font-weight:700;text-transform:capitalize;line-height:1.1em;letter-spacing:1.7px;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-ef297f7:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-2894 .elementor-element.elementor-element-ef297f7 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#54595F;}.elementor-2894 .elementor-element.elementor-element-ef297f7 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:23% 10% 88% 10%;}.elementor-2894 .elementor-element.elementor-element-ef297f7 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-2894 .elementor-element.elementor-element-d7e228f{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 50px) 0px;--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-50px/2);}.elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-50px/2);}.elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-item > .elementor-icon-list-text, .elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-item > a{font-weight:600;}.elementor-2894 .elementor-element.elementor-element-d7e228f .elementor-icon-list-text{color:#FFFFFF;transition:color 0.3s;}.elementor-2894 .elementor-element.elementor-element-506d46d{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 60px) 0px;}.elementor-2894 .elementor-element.elementor-element-506d46d .elementor-heading-title.animated .char{-webkit-animation:bounceIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:bounceIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(60ms * var(--char-index));animation-delay:calc(60ms * var(--char-index));}.elementor-2894 .elementor-element.elementor-element-506d46d .elementor-heading-title.animated .word{-webkit-animation:bounceIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:bounceIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(60ms * var(--word-index));animation-delay:calc(60ms * var(--word-index));}.elementor-2894 .elementor-element.elementor-element-506d46d .elementor-heading-title.splitting .whitespace{width:10px;}.elementor-2894 .elementor-element.elementor-element-506d46d .elementor-heading-title{color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-6a9a71d{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 80px) 0px;font-size:15px;line-height:2em;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-c920efe .wavo-button:not(.btn-justify){text-align:left;}.elementor-2894 .elementor-element.elementor-element-c920efe .wavo-btn span{color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-c920efe .wavo-button .wavo-btn span{font-weight:600;text-transform:none;}.elementor-2894 .elementor-element.elementor-element-c920efe .wavo-btn{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;border-style:solid;border-width:0px 0px 0px 0px;}.elementor-2894 .elementor-element.elementor-element-c920efe .wavo-btn:hover span{color:#24D5B4;}.elementor-2894 .elementor-element.elementor-element-c1de9a1 > .elementor-container > .elementor-column > .elementor-widget-wrap{align-content:flex-start;align-items:flex-start;}.elementor-2894 .elementor-element.elementor-element-c1de9a1{overflow:hidden;}.elementor-2894 .elementor-element.elementor-element-c1de9a1 .elementor-background-overlay{width:100%;height:100%;}.elementor-2894 .elementor-element.elementor-element-69dd826:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-2894 .elementor-element.elementor-element-69dd826 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#F2295B;}.elementor-bc-flex-widget .elementor-2894 .elementor-element.elementor-element-69dd826.elementor-column .elementor-widget-wrap{align-items:space-between;}.elementor-2894 .elementor-element.elementor-element-69dd826.elementor-column.elementor-element[data-element_type="column"] > .elementor-widget-wrap.elementor-element-populated{align-content:space-between;align-items:space-between;}.elementor-2894 .elementor-element.elementor-element-69dd826.elementor-column > .elementor-widget-wrap{justify-content:flex-end;}.elementor-2894 .elementor-element.elementor-element-69dd826 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:24% 10% 88% 10%;}.elementor-2894 .elementor-element.elementor-element-69dd826 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-2894 .elementor-element.elementor-element-31ad5c0{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 50px) 0px;--e-icon-list-icon-size:14px;--icon-vertical-offset:0px;}.elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(50px/2);}.elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-50px/2);}.elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-50px/2);}.elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-icon i{transition:color 0.3s;}.elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-icon svg{transition:fill 0.3s;}.elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-item > .elementor-icon-list-text, .elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-item > a{font-weight:600;}.elementor-2894 .elementor-element.elementor-element-31ad5c0 .elementor-icon-list-text{color:#FFFFFF;transition:color 0.3s;}.elementor-2894 .elementor-element.elementor-element-5964140{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 60px) 0px;}.elementor-2894 .elementor-element.elementor-element-5964140 .elementor-heading-title.animated .char{-webkit-animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(47ms * var(--char-index));animation-delay:calc(47ms * var(--char-index));}.elementor-2894 .elementor-element.elementor-element-5964140 .elementor-heading-title.animated .word{-webkit-animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(47ms * var(--word-index));animation-delay:calc(47ms * var(--word-index));}.elementor-2894 .elementor-element.elementor-element-5964140 .elementor-heading-title.splitting .whitespace{width:10px;}.elementor-2894 .elementor-element.elementor-element-5964140 .elementor-heading-title{color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-aec46b8{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 80px) 0px;font-size:15px;line-height:2em;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-17f6e5c .wavo-button:not(.btn-justify){text-align:left;}.elementor-2894 .elementor-element.elementor-element-17f6e5c .wavo-btn span{color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-17f6e5c .wavo-button .wavo-btn span{font-weight:600;text-transform:none;}.elementor-2894 .elementor-element.elementor-element-17f6e5c .wavo-btn{padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;border-style:solid;border-width:0px 0px 0px 0px;}.elementor-2894 .elementor-element.elementor-element-17f6e5c .wavo-btn:hover span{color:#000000;}.elementor-2894 .elementor-element.elementor-element-e34a1a5:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap, .elementor-2894 .elementor-element.elementor-element-e34a1a5 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("../../wp-content/uploads/2020/04/two-images-4.jpg");background-position:top center;background-repeat:no-repeat;background-size:cover;}.elementor-2894 .elementor-element.elementor-element-e34a1a5 > .elementor-element-populated >  .elementor-background-overlay{background-color:#000000;opacity:0.28;}.elementor-2894 .elementor-element.elementor-element-e34a1a5 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;padding:26% 5% 0% 9%;}.elementor-2894 .elementor-element.elementor-element-e34a1a5 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-2894 .elementor-element.elementor-element-2fb9c01{z-index:2;}.elementor-2894 .elementor-element.elementor-element-2fb9c01 .elementor-heading-title{font-weight:400;text-transform:uppercase;letter-spacing:3.8px;color:#FFFFFF;}.elementor-2894 .elementor-element.elementor-element-598fa9b{width:var( --container-widget-width, 480px );max-width:480px;margin:30px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;--container-widget-width:480px;--container-widget-flex-grow:0;z-index:2;}.elementor-2894 .elementor-element.elementor-element-598fa9b .elementor-heading-title.animated .char{-webkit-animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(50ms * var(--char-index));animation-delay:calc(50ms * var(--char-index));}.elementor-2894 .elementor-element.elementor-element-598fa9b .elementor-heading-title.animated .word{-webkit-animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;animation:fadeIn2 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;-webkit-animation-delay:calc(50ms * var(--word-index));animation-delay:calc(50ms * var(--word-index));}.elementor-2894 .elementor-element.elementor-element-598fa9b .elementor-heading-title.splitting .whitespace{width:5px;}.elementor-2894 .elementor-element.elementor-element-598fa9b .elementor-heading-title{font-family:"Nunito", Sans-serif;font-size:94px;font-weight:700;text-transform:capitalize;line-height:1.1em;letter-spacing:1.7px;color:#FFFFFF;}@media(max-width:1024px){.elementor-2894 .elementor-element.elementor-element-718a97d > .elementor-element-populated{padding:40% 0% 0% 14%;}.elementor-2894 .elementor-element.elementor-element-2c7c27d .elementor-heading-title{font-size:80px;}.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper b,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper .typed-cursor,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper .typed_before,.elementor-2894 .elementor-element.elementor-element-f09a9e5 .animated_headline_wrapper .typed_after{font-size:74px;}.elementor-2894 .elementor-element.elementor-element-61a451f > .elementor-element-populated{padding:40% 0% 32% 9%;}.elementor-2894 .elementor-element.elementor-element-7232f13 > .elementor-element-populated{padding:20% 10% 17% 9%;}.elementor-2894 .elementor-element.elementor-element-b7435a6 > .elementor-element-populated{padding:20% 0% 2% 8%;}.elementor-2894 .elementor-element.elementor-element-677ec2b .elementor-heading-title{font-size:65px;}.elementor-2894 .elementor-element.elementor-element-3019bf2 > .elementor-element-populated{padding:20% 0% 0% 10%;}.elementor-2894 .elementor-element.elementor-element-9142286 .elementor-heading-title{font-size:65px;}.elementor-2894 .elementor-element.elementor-element-ef297f7 > .elementor-element-populated{padding:20% 10% 15% 10%;}.elementor-2894 .elementor-element.elementor-element-69dd826 > .elementor-element-populated{padding:20% 10% 15% 15%;}.elementor-2894 .elementor-element.elementor-element-e34a1a5 > .elementor-element-populated{padding:20% 0% 20% 10%;}.elementor-2894 .elementor-element.elementor-element-598fa9b .elementor-heading-title{font-size:65px;}}@media(max-width:767px){.elementor-2894 .elementor-element.elementor-element-718a97d > .elementor-element-populated{padding:50% 0% 20% 10%;}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:last-child){padding-block-end:calc(30px/2);}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items:not(.elementor-inline-items) .elementor-icon-list-item:not(:first-child){margin-block-start:calc(30px/2);}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-inline:calc(30px/2);}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items.elementor-inline-items{margin-inline:calc(-30px/2);}.elementor-2894 .elementor-element.elementor-element-2940a87 .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{inset-inline-end:calc(-30px/2);}.elementor-2894 .elementor-element.elementor-element-b7435a6 > .elementor-element-populated{padding:20% 0% 20% 8%;}.elementor-2894 .elementor-element.elementor-element-3019bf2 > .elementor-element-populated{padding:20% 0% 20% 8%;}.elementor-2894 .elementor-element.elementor-element-e34a1a5 > .elementor-element-populated{padding:20% 0% 20% 10%;}}</style>		<div data-elementor-type="page" data-elementor-id="2894" class="elementor elementor-2894">
+						<section class="wavo-column-gap-no elementor-section elementor-top-section elementor-element elementor-element-3ec008c elementor-section-stretched elementor-section-full_width elementor-section-height-full elementor-section-items-stretch elementor-section-content-top elementor-section-height-default" data-id="3ec008c" data-element_type="section" data-e-type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-718a97d" data-id="718a97d" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<div class="elementor-element elementor-element-a0b7b2f wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="a0b7b2f" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<span class="elementor-heading-title elementor-size-default">New York</span>				</div>
+				<div class="elementor-element elementor-element-2c7c27d wavo-stroke wavo-has-stroke-yes wavo-has-stroke-type stroke-type-part wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="2c7c27d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default"><b>start</b></h2>				</div>
+				<div class="elementor-element elementor-element-f09a9e5 elementor-widget elementor-widget-wavo-animated-headline" data-id="f09a9e5" data-element_type="widget" data-e-type="widget" data-widget_type="wavo-animated-headline.default">
+				<div class="elementor-widget-container">
+					<div class="animated_headline_wrapper"><h2 class="headline clip is-full-width" data-settings={"duration":1200}><span class="words-wrapper"><b class="is-visible">Project</b><b>Product</b><b>Portfolio</b></span> </h2></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-61a451f" data-id="61a451f" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cc08815 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="cc08815" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Home</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">News</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Contact</span>
+									</li>
+						</ul>
+						</div>
+				<div data-split-settings="{&quot;type&quot;:&quot;chars&quot;,&quot;animation&quot;:&quot;fadeInRight2&quot;}" class="elementor-element elementor-element-64e00f1 wavo-headig-split heading-has-split-yes wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="64e00f1" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Qualm Inspiration for Everybody</h2>				</div>
+				<div class="elementor-element elementor-element-24f0a36 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="24f0a36" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.								</div>
+				<div class="elementor-element elementor-element-ecc3e44 elementor-invisible elementor-widget elementor-widget-wavo-button" data-id="ecc3e44" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}" data-widget_type="wavo-button.default">
+				<div class="elementor-widget-container">
+					<div class="wavo-button"><a class="wavo-btn btn-curve btn-lit" href="../../index.html@p=2903.html#"><span class="button_text">Read more </span></a></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="wavo-column-gap-no elementor-section elementor-top-section elementor-element elementor-element-ef69aab elementor-section-stretched elementor-section-full_width elementor-section-height-full elementor-section-items-stretch elementor-section-content-top elementor-reverse-mobile elementor-section-height-default" data-id="ef69aab" data-element_type="section" data-e-type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7232f13" data-id="7232f13" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2940a87 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2940a87" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Family</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Elementor</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">WordPress</span>
+									</li>
+						</ul>
+						</div>
+				<div data-split-settings="{&quot;type&quot;:&quot;chars&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}" class="elementor-element elementor-element-fb55cf4 wavo-headig-split heading-has-split-yes wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="fb55cf4" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">The words hadn't flowed from his fingers </h2>				</div>
+				<div class="elementor-element elementor-element-dd1e9e1 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="dd1e9e1" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="text-editor.default">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.								</div>
+				<div class="elementor-element elementor-element-a69a290 elementor-invisible elementor-widget elementor-widget-wavo-button" data-id="a69a290" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;_animation_delay&quot;:500}" data-widget_type="wavo-button.default">
+				<div class="elementor-widget-container">
+					<div class="wavo-button"><a class="wavo-btn btn-curve btn-lit" href="../../index.html@p=2903.html#"><span class="button_text">Read more </span></a></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b7435a6" data-id="b7435a6" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<div class="elementor-element elementor-element-896e47a wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="896e47a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<span class="elementor-heading-title elementor-size-default">Istanbul</span>				</div>
+				<div data-split-settings="{&quot;type&quot;:&quot;chars&quot;,&quot;animation&quot;:&quot;fadeIn2&quot;}" class="elementor-element elementor-element-677ec2b wavo-headig-split heading-has-split-yes elementor-widget__width-initial wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="677ec2b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Sell Your Products</h2>				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="wavo-column-gap-no elementor-section elementor-top-section elementor-element elementor-element-4393050 elementor-section-stretched elementor-section-full_width elementor-section-height-full elementor-section-items-stretch elementor-section-content-top elementor-section-height-default" data-id="4393050" data-element_type="section" data-e-type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3019bf2" data-id="3019bf2" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<div class="elementor-element elementor-element-905f3ad wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="905f3ad" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<span class="elementor-heading-title elementor-size-default">New Jersey</span>				</div>
+				<div data-split-settings="{&quot;type&quot;:&quot;chars&quot;,&quot;animation&quot;:&quot;fadeIn2&quot;}" class="elementor-element elementor-element-9142286 wavo-headig-split heading-has-split-yes elementor-widget__width-initial wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="9142286" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Build It Forever.</h2>				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ef297f7" data-id="ef297f7" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d7e228f elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d7e228f" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Ninetheme</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Paragraph</span>
+									</li>
+						</ul>
+						</div>
+				<div data-split-settings="{&quot;type&quot;:&quot;chars&quot;,&quot;animation&quot;:&quot;bounceIn2&quot;}" class="elementor-element elementor-element-506d46d wavo-headig-split heading-has-split-yes wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="506d46d" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Bangkok's Hidden Foodstalls
+</h2>				</div>
+				<div class="elementor-element elementor-element-6a9a71d elementor-widget elementor-widget-text-editor" data-id="6a9a71d" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.								</div>
+				<div class="elementor-element elementor-element-c920efe elementor-widget elementor-widget-wavo-button" data-id="c920efe" data-element_type="widget" data-e-type="widget" data-widget_type="wavo-button.default">
+				<div class="elementor-widget-container">
+					<div class="wavo-button"><a class="wavo-btn btn-curve btn-lit" href="../../index.html@p=2903.html#"><span class="button_text">Read more </span></a></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="wavo-column-gap-no elementor-section elementor-top-section elementor-element elementor-element-c1de9a1 elementor-section-stretched elementor-section-full_width elementor-section-height-full elementor-section-items-stretch elementor-section-content-top elementor-reverse-mobile elementor-section-height-default" data-id="c1de9a1" data-element_type="section" data-e-type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-69dd826" data-id="69dd826" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-31ad5c0 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="31ad5c0" data-element_type="widget" data-e-type="widget" data-widget_type="icon-list.default">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Credits</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Tests</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Layouts</span>
+									</li>
+						</ul>
+						</div>
+				<div data-split-settings="{&quot;type&quot;:&quot;chars&quot;,&quot;animation&quot;:&quot;fadeIn2&quot;}" class="elementor-element elementor-element-5964140 wavo-headig-split heading-has-split-yes wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="5964140" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Thinking about the latest things to cream</h2>				</div>
+				<div class="elementor-element elementor-element-aec46b8 elementor-widget elementor-widget-text-editor" data-id="aec46b8" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.								</div>
+				<div class="elementor-element elementor-element-17f6e5c elementor-widget elementor-widget-wavo-button" data-id="17f6e5c" data-element_type="widget" data-e-type="widget" data-widget_type="wavo-button.default">
+				<div class="elementor-widget-container">
+					<div class="wavo-button"><a class="wavo-btn btn-curve btn-lit" href="../../index.html@p=2903.html#"><span class="button_text">Read more </span></a></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e34a1a5" data-id="e34a1a5" data-element_type="column" data-e-type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+						<div class="elementor-element elementor-element-2fb9c01 wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="2fb9c01" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<span class="elementor-heading-title elementor-size-default">London</span>				</div>
+				<div data-split-settings="{&quot;type&quot;:&quot;chars&quot;,&quot;animation&quot;:&quot;fadeIn2&quot;}" class="elementor-element elementor-element-598fa9b wavo-headig-split heading-has-split-yes elementor-widget__width-initial wavo-transform transform-type-translate elementor-widget elementor-widget-heading" data-id="598fa9b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Water Wonders</h2>				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		<div class="swiper-pagination-wrapper"><div class="swiper-pagination onepage-slider-pagination"></div></div></div><div class="swiper-container gallery-text"><div class="swiper-wrapper nav--xusni"><div class="swiper-slide custom-pagination-xusni nav__item"><span class="nav__item-title">Inspiration</span></div><div class="swiper-slide custom-pagination-xusni nav__item"><span class="nav__item-title">Products</span></div><div class="swiper-slide custom-pagination-xusni nav__item"><span class="nav__item-title">Build</span></div><div class="swiper-slide custom-pagination-xusni nav__item"><span class="nav__item-title">Creams</span></div></div></div></div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		<div id="cursor1" class="cursor cursor1 cursor-type-1 wavo-cursor"></div><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/wavo/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+				<script type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='elementor-post-2894-css' href='../../wp-content/uploads/elementor/css/post-2894.css@ver=1774769062.css' type='text/css' media='all' />
+<link rel='stylesheet' id='elementor-gf-local-nunito-css' href='../../wp-content/uploads/elementor/google-fonts/css/nunito.css@ver=1754843324.css' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='../../wp-content/plugins/elementor/assets/css/widget-heading.min.css@ver=3.35.9.css' type='text/css' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='../../wp-content/plugins/elementor/assets/css/widget-icon-list.min.css@ver=3.35.9.css' type='text/css' media='all' />
+<link rel='stylesheet' id='e-animation-fadeIn-css' href='../../wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css@ver=3.35.9.css' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-ui-css' href='../../wp-content/themes/wavo/js/plugins/jquery-ui/jquery-ui.min.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-css' href='../../wp-content/themes/wavo/js/plugins/magnific/magnific-popup.css@ver=1.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='splitting-css' href='../../wp-content/themes/wavo/js/plugins/splitting/splitting.css@ver=6.9.css' type='text/css' media='all' />
+<link rel='stylesheet' id='splitting-cells-css' href='../../wp-content/themes/wavo/js/plugins/splitting/splitting-cells.css@ver=6.9.css' type='text/css' media='all' />
+<script type="text/javascript" src="../../wp-content/themes/wavo/woocommerce/woocommerce-custom.js@ver=1.0" id="wavo-woocommerce-custom-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js@ver=10.6.1" id="sourcebuster-js-js"></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+/* <![CDATA[ */
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https://wavo1.ninetheme.com/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+//# sourceURL=wc-order-attribution-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js@ver=10.6.1" id="wc-order-attribution-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/elementor/assets/js/webpack.runtime.min.js@ver=3.35.9" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/elementor/assets/js/frontend-modules.min.js@ver=3.35.9" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/jquery/ui/core.min.js@ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.35.9","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_components":true,"e_interactions":true,"e_editor_one":true,"import-export-customization":true},"urls":{"assets":"https:\/\/wavo1.ninetheme.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/wavo1.ninetheme.com\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/wavo1.ninetheme.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"4ebc5bec21"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":2903,"title":"Divided%20Full%20Page%20Scroll%20%E2%80%93%20Wavo","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/elementor/assets/js/frontend.min.js@ver=3.35.9" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/plugins/cursor/all-cursors.js@ver=1.0" id="all-cursors-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/plugins/splitting/splitting.min.js@ver=1.0" id="splitting-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/plugins/swiper/swiper.min.js@ver=6.3.8" id="wavo-swiper-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/scripts.js@ver=1.0" id="wavo-main-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/framework-settings.js@ver=1.0" id="framework-settings-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/plugins/jarallax/jarallax.min.js@ver=6.9" id="jarallax-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/plugins/particles/particles.min.js@ver=6.9" id="particles-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/plugins/vegas/vegas.min.js@ver=1.0" id="vegas-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/wavo-elementor-addons/assets/front/js/animated-headline/script.js@ver=1.0.0" id="animated-headline-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/wavo-elementor-addons/assets/front/js/custom-scripts.js@ver=2.3.1" id="wavo-addons-custom-scripts-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/plugins/jquery-ui/jquery-ui.min.js@ver=6.9" id="jquery-ui-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/wavo/js/plugins/magnific/magnific-popup.min.js@ver=6.9" id="magnific-js"></script>
+	<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e3e27858f627ef2',t:'MTc3NDc3OTc1Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
+<!-- Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com -->
